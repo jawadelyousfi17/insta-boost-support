@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Viral+ — Data Deletion &amp; Retention</title>
+  <style>
+    :root { --ink:#161420; --sub:#5b5868; --line:#ece9f1; --accent:#FF2E93; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      color:var(--ink); line-height:1.6; background:#fff; }
+    .wrap { max-width:760px; margin:0 auto; padding:32px 22px 80px; }
+    .bar { height:6px; background:linear-gradient(90deg,#FF6A5B,#FF2E93,#C026D3); border-radius:99px; }
+    h1 { font-size:32px; letter-spacing:-.5px; margin:26px 0 6px; }
+    h2 { font-size:18px; margin:30px 0 8px; }
+    .muted { color:var(--sub); font-size:14px; }
+    p { color:#2c2a36; }
+    a { color:var(--accent); }
+    table { width:100%; border-collapse:collapse; margin-top:12px; font-size:14px; }
+    th, td { text-align:left; padding:11px 12px; border-bottom:1px solid var(--line); vertical-align:top; }
+    th { color:var(--sub); font-weight:600; font-size:13px; text-transform:uppercase; letter-spacing:.3px; }
+    .tag { display:inline-block; font-size:12px; font-weight:700; padding:3px 9px; border-radius:999px; }
+    .del { background:#ffe6f1; color:#C026D3; }
+    .keep { background:#fff1e6; color:#FF6A5B; }
+    hr { border:0; border-top:1px solid var(--line); margin:24px 0; }
+    .footer { color:var(--sub); font-size:13px; margin-top:40px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="bar"></div>
+    <h1>Data Deletion &amp; Retention</h1>
+    <p class="muted">Viral+ · by Viral Plus · Last updated June 2026</p>
+
+    <p>This page lists which data is permanently <strong>deleted</strong> when you request account
+       deletion through the <a href="./index.html">Delete Your Account</a> page, which data is
+       <strong>kept</strong>, and for how long. Requests are processed within <strong>30 days</strong>.</p>
+
+    <h2>Data that is deleted</h2>
+    <table>
+      <thead><tr><th>Data type</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Account data</strong> — email address, account identifier, sign-in credentials</td><td><span class="tag del">Deleted</span></td></tr>
+        <tr><td><strong>Profile data</strong> — Instagram username, niche, interests, follower figures</td><td><span class="tag del">Deleted</span></td></tr>
+        <tr><td><strong>Activity data</strong> — coin balance, level, streaks, orders, transaction history</td><td><span class="tag del">Deleted</span></td></tr>
+        <tr><td><strong>Proof screenshots</strong> — images uploaded as proof of completed actions</td><td><span class="tag del">Deleted</span></td></tr>
+      </tbody>
+    </table>
+    <p class="muted">Deleted data is removed from our production database and storage. Remaining coins
+       have no cash value and are forfeited at deletion.</p>
+
+    <h2>Data that is kept</h2>
+    <table>
+      <thead><tr><th>Data type</th><th>Status</th><th>Why &amp; how long</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>Purchase / transaction records</strong> — app-store transaction identifiers and amounts (never card details)</td>
+          <td><span class="tag keep">Kept</span></td>
+          <td>Required for tax, accounting, and anti-fraud obligations. Retained up to <strong>7 years</strong> as required by law, then deleted.</td>
+        </tr>
+        <tr>
+          <td><strong>Deletion request record</strong> — email and timestamp of your request</td>
+          <td><span class="tag keep">Kept</span></td>
+          <td>Proof that we honored your request. Retained up to <strong>12 months</strong>, then deleted.</td>
+        </tr>
+        <tr>
+          <td><strong>Anonymized / aggregated logs</strong> — data with no link back to you</td>
+          <td><span class="tag keep">Kept</span></td>
+          <td>Used for security and service analytics. No longer personal data; retained indefinitely.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Retention summary</h2>
+    <p>Once verified, identifying account, profile, activity, and proof data is deleted within
+       <strong>30 days</strong>. Records we are legally required to keep (mainly purchase records)
+       are retained for up to <strong>7 years</strong> and then deleted. Backups containing your data
+       are purged on our normal backup-rotation cycle (within <strong>90 days</strong>).</p>
+
+    <h2>Contact</h2>
+    <p>Questions about deletion or retention? Email
+       <a href="mailto:SUPPORT_EMAIL">SUPPORT_EMAIL</a>.</p>
+
+    <hr />
+    <p class="muted">Viral+ is an independent app published by Viral Plus and is not affiliated with,
+       endorsed by, or sponsored by Instagram or Meta Platforms, Inc.</p>
+    <div class="footer">© 2026 Viral Plus · Viral+ ·
+      <a href="./index.html">Delete Your Account</a></div>
+  </div>
+</body>
+</html>
