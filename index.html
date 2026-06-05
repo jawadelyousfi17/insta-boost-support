@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Viral+ — Delete Your Account</title>
+  <style>
+    :root { --ink:#161420; --sub:#5b5868; --line:#ece9f1; --field:#f6f4fa; --accent:#FF2E93; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      color:var(--ink); line-height:1.6; background:#fff; }
+    .wrap { max-width:680px; margin:0 auto; padding:32px 22px 80px; }
+    .bar { height:6px; background:linear-gradient(90deg,#FF6A5B,#FF2E93,#C026D3); border-radius:99px; }
+    h1 { font-size:30px; letter-spacing:-.5px; margin:24px 0 6px; }
+    h2 { font-size:18px; margin:30px 0 8px; }
+    p { color:#2c2a36; } a { color:var(--accent); }
+    .muted { color:var(--sub); font-size:14px; }
+    .card { border:1px solid var(--line); border-radius:18px; padding:20px; margin-top:14px; }
+    label { display:block; font-weight:600; font-size:14px; margin:14px 0 6px; }
+    input, textarea, select { width:100%; padding:12px 14px; border:1px solid var(--line);
+      border-radius:12px; background:var(--field); font-size:15px; font-family:inherit; color:var(--ink); }
+    textarea { min-height:90px; resize:vertical; }
+    .check { display:flex; gap:10px; align-items:flex-start; margin-top:14px; font-size:14px; color:var(--sub); }
+    .check input { width:auto; margin-top:3px; }
+    button { margin-top:18px; width:100%; padding:14px; border:0; border-radius:999px; color:#fff;
+      font-size:16px; font-weight:700; cursor:pointer;
+      background:linear-gradient(90deg,#FF6A5B,#FF2E93,#C026D3); }
+    .note { font-size:13px; color:var(--sub); margin-top:12px; }
+    ol.steps { padding-left:0; list-style:none; counter-reset:s; margin:14px 0 0; }
+    ol.steps li { position:relative; padding:14px 16px 14px 56px; border:1px solid var(--line);
+      border-radius:14px; margin-top:10px; }
+    ol.steps li::before { counter-increment:s; content:counter(s); position:absolute; left:14px; top:14px;
+      width:28px; height:28px; border-radius:50%; color:#fff; font-weight:700; font-size:14px;
+      display:flex; align-items:center; justify-content:center;
+      background:linear-gradient(90deg,#FF2E93,#C026D3); }
+    .footer { color:var(--sub); font-size:13px; margin-top:40px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="bar"></div>
+    <h1>Delete Your Account</h1>
+    <p class="muted">Viral+ · by Viral Plus</p>
+
+    <p>This page explains how to request deletion of your <strong>Viral+</strong> account
+       (the app published on Google Play by <strong>Viral Plus</strong>) and the data linked to it.
+       Account deletion is permanent and cannot be undone.</p>
+
+    <h2>Steps to request deletion</h2>
+    <ol class="steps">
+      <li><strong>Use your account email.</strong> Submit from the same email you signed in with
+          (Google Sign-In or email/password) so we can verify you own the account.</li>
+      <li><strong>Fill the form below</strong> — or email <a href="mailto:SUPPORT_EMAIL?subject=Delete%20my%20account">SUPPORT_EMAIL</a>
+          with the subject "Delete my account".</li>
+      <li><strong>Confirm the checkbox</strong> acknowledging deletion is permanent and remaining coins are forfeited.</li>
+      <li><strong>Watch for our verification email.</strong> We may email you to confirm ownership before deleting.</li>
+      <li><strong>Deletion processed within 30 days.</strong> We email you once your account and data are removed.</li>
+    </ol>
+
+    <div class="card">
+      <!-- Replace YOUR_FORM_ID with your Formspree form id (https://formspree.io). -->
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="hidden" name="_subject" value="Viral+ account deletion request" />
+
+        <label for="email">Account email</label>
+        <input id="email" type="email" name="email" required placeholder="you@example.com" />
+
+        <label for="username">Instagram username (optional)</label>
+        <input id="username" type="text" name="instagram_username" placeholder="@yourhandle" />
+
+        <label for="reason">Reason (optional)</label>
+        <textarea id="reason" name="reason" placeholder="Tell us why you're leaving (optional)"></textarea>
+
+        <label class="check">
+          <input type="checkbox" name="confirm" required />
+          <span>I understand this permanently deletes my Viral+ account and data, and that any remaining coins are forfeited and non-refundable.</span>
+        </label>
+
+        <button type="submit">Request account deletion</button>
+        <p class="note">By submitting you confirm you own this account. We may email you to verify before deleting.</p>
+      </form>
+    </div>
+
+    <h2>What gets deleted &amp; kept</h2>
+    <p>For the full list of data that is deleted, data that is kept, and retention periods,
+       see the <a href="./data-deletion.html">Data Deletion &amp; Retention</a> page.</p>
+
+    <div class="footer">© 2026 Viral Plus · Viral+ ·
+      <a href="./data-deletion.html">Data Deletion &amp; Retention</a></div>
+  </div>
+</body>
+</html>
